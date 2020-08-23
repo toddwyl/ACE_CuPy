@@ -49,6 +49,13 @@ img1_enhance = ACE_cpColor(img1)
 cv2.imwrite('assets/1_enhance.jpg', img1_enhance)
 ```
 
+
+## Advance
+`gpu_mp_demo.py` is the multiprocess code for enhance our dataset.
+``` sh
+python gpu_mp_demo.py
+```
+
 ## Performance
 
 I use the code to enhance `underwater images`.
