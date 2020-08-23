@@ -1,6 +1,9 @@
 import cv2
 from ACE_cupy import ACE_cpColor
+import os
 
+if not os.path.exists('assets'):
+    os.makedirs('assets')
 
 img1 = cv2.imread('data/000001.jpg')
 img1_enhance = ACE_cpColor(img1)

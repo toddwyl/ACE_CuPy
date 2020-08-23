@@ -1,0 +1,38 @@
+# This file may be used to create an environment using:
+# $ conda create --name <env> --file <this file>
+# platform: linux-64
+_libgcc_mutex=0.1=conda_forge
+_openmp_mutex=4.5=1_gnu
+ca-certificates=2020.6.24=0
+certifi=2020.6.20=py37_0
+cudatoolkit=10.1.243=h6bb024c_0
+cudnn=7.6.5=cuda10.1_0
+cupy=7.8.0=py37h0632833_0
+fastrlock=0.5=py37h3340039_0
+ld_impl_linux-64=2.34=hc38a660_9
+libblas=3.8.0=17_openblas
+libcblas=3.8.0=17_openblas
+libedit=3.1.20191231=h14c3975_1
+libffi=3.2.1=hd88cf55_4
+libgcc-ng=9.3.0=h24d8f2e_16
+libgfortran-ng=7.5.0=hdf63c60_16
+libgomp=9.3.0=h24d8f2e_16
+liblapack=3.8.0=17_openblas
+libopenblas=0.3.10=h5a2b251_0
+libstdcxx-ng=9.3.0=hdf63c60_16
+nccl=2.7.8.1=h51cf6c1_0
+ncurses=6.2=he6710b0_1
+numpy=1.19.1=py37h7ea13bd_2
+opencv-python=4.4.0.42=pypi_0
+openssl=1.1.1g=h7b6447c_0
+pip=20.2.2=py37_0
+python=3.7.8=h6f2ec95_1_cpython
+python_abi=3.7=1_cp37m
+readline=8.0=h7b6447c_0
+setuptools=49.6.0=py37_0
+six=1.15.0=py_0
+sqlite=3.33.0=h62c20be_0
+tk=8.6.10=hbc83047_0
+wheel=0.35.1=pyh9f0ad1d_0
+xz=5.2.5=h7b6447c_0
+zlib=1.2.11=h7b6447c_3
