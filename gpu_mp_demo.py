@@ -6,9 +6,6 @@ import cv2
 import gc
 from multiprocessing import Pool
 import random
-# def enhance(img):
-#     img = ACE_cpColor(img)
-#     return img
 
 
 st = time.time()
@@ -33,11 +30,8 @@ def preprocess_train_img(img_path, gpu_id):
         mempool = cp.get_default_memory_pool()
         pinned_mempool = cp.get_default_pinned_memory_pool()
         imgn = img_path.split('/')[-1]
-        # img = imageio.imread(img_path)
         img = cv2.imread(img_path)
-        # img = enhance(img)
         img = ACE_cpColor(img, gpu_id=gpu_id)
-        # imageio.imwrite(os.path.join(train_enhance_path, imgn), img)
         cv2.imwrite(os.path.join(train_enhance_path, imgn), img)
         print(f"preprocess_train_img:{imgn}")
         del img, img_path, imgn
@@ -54,11 +48,8 @@ def preprocess_val_img(img_path, gpu_id):
         mempool = cp.get_default_memory_pool()
         pinned_mempool = cp.get_default_pinned_memory_pool()
         imgn = img_path.split('/')[-1]
-        # img = imageio.imread(img_path)
         img = cv2.imread(img_path)
-        # img = enhance(img)
         img = ACE_cpColor(img, gpu_id=gpu_id)
-        # imageio.imwrite(os.path.join(val_enhance_path, imgn), img)
         cv2.imwrite(os.path.join(val_enhance_path, imgn), img)
         print(f"preprocess_val_img:{imgn}")
         del img, img_path, imgn
@@ -75,11 +66,8 @@ def preprocess_test_img(img_path, gpu_id):
         mempool = cp.get_default_memory_pool()
         pinned_mempool = cp.get_default_pinned_memory_pool()
         imgn = img_path.split('/')[-1]
-        # img = imageio.imread(img_path)
         img = cv2.imread(img_path)
-        # img = enhance(img)
         img = ACE_cpColor(img, gpu_id=gpu_id)
-        # imageio.imwrite(os.path.join(test_enhance_path, imgn), img)
         cv2.imwrite(os.path.join(test_enhance_path, imgn), img)
         print(f"preprocess_test_img:{imgn}")
         del img, img_path, imgn
