@@ -53,5 +53,5 @@ cv2.imwrite('assets/1_enhance.jpg', img1_enhance)
 
 I use the code to enhance `underwater images`.
 
-<img src="data/000001.jpg" width="460"><img src="assets/1_enhance.jpg" width="460">
-<img src="data/002643.jpg" width="460"><img src="assets/2643_enhance.jpg" width="460">
+<img src="data/000001.jpg" width="350"><img src="assets/1_enhance.jpg" width="350">
+<img src="data/002643.jpg" width="350"><img src="assets/2643_enhance.jpg" width="350">
